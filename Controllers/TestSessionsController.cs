@@ -81,6 +81,22 @@ namespace AspTest.Controllers
         public async Task<ActionResult<TestSessions>> PostTestSessions(TestSessions testSessions)
         {
             _context.TestSessions.Add(testSessions);
+
+            // Get 10 random or first 10 tests from the Tests table
+            var tests = await _context.Tests
+                .Where(t => t.IsActive)      // only active tests
+                .Take(10)                    // take first 10 (or use OrderBy/random if you want)
+                .ToListAsync();
+
+            foreach (var test in tests)
+            {
+                testSessions.TestSessionTests.Add(new TestSessionTests
+                {
+                    TestId = test.Id,
+                    TestSessionId = testSessions.Id
+                });
+            }
+
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetTestSessions", new { id = testSessions.Id }, testSessions);

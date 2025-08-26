@@ -4,7 +4,7 @@ public class TestSessionAnswers
 {
     public long Id { get; set; }
 
-    public long TestSessionTestId { get; set; } // must match TestSessionTests.Id type
+    public long TestSessionTestId { get; set; }
     public TestSessionTests TestSessionTest { get; set; }
 
     public long SelectedOptionId { get; set; }

@@ -1,2 +1,4 @@
 wwwroot\swagger\custom-swagger.js
+wwwroot\seed\tests.json
 D:\.net\AspTest\wwwroot\swagger\custom-swagger.js
+D:\.net\AspTest\wwwroot\seed\tests.json

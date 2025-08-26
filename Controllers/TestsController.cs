@@ -27,7 +27,9 @@ namespace AspTest.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Tests>>> GetTests()
         {
-            return await _context.Tests.ToListAsync();
+            return await _context.Tests
+                .Include(t => t.Options)
+                .ToListAsync();
         }
 
         // GET: api/Tests/5

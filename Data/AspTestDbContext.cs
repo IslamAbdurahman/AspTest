@@ -1,5 +1,6 @@
 ﻿using AspTest.Models;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json;
 
 namespace AspTest.Data
 {
@@ -53,6 +54,37 @@ namespace AspTest.Data
                 .WithMany()
                 .HasForeignKey(a => a.SelectedOptionId)
                 .OnDelete(DeleteBehavior.NoAction);
+
+            var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "seed", "tests.json");
+            var jsonData = File.ReadAllText(path);
+            var tests = JsonSerializer.Deserialize<List<Tests>>(jsonData);
+
+            if (tests != null)
+            {
+                // Tests
+                var testsData = tests.Select(t => new Tests
+                {
+                    Id = t.Id,
+                    QuestionText = t.QuestionText,
+                    IsActive = t.IsActive,
+                    CreatedAt = t.CreatedAt
+                }).ToList();
+
+                modelBuilder.Entity<Tests>().HasData(testsData);
+
+                // Options
+                var optionsData = tests.SelectMany(t => t.Options.Select(o => new Options
+                {
+                    Id = o.Id,
+                    TestId = t.Id,
+                    OptionText = o.OptionText,
+                    IsCorrect = o.IsCorrect,
+                    CreatedAt = o.CreatedAt
+                })).ToList();
+
+                modelBuilder.Entity<Options>().HasData(optionsData);
+            }
+
         }
 
         // 🔹 DbSet lar
@@ -62,5 +94,6 @@ namespace AspTest.Data
         public DbSet<TestSessionTests> TestSessionTests { get; set; }
         public DbSet<TestSessionAnswers> TestSessionAnswers { get; set; }
         public DbSet<TestSessions> TestSessions { get; set; }
+
     }
 }

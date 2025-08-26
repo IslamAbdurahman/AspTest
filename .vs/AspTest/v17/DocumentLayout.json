@@ -1,0 +1,445 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\.net\\AspTest\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{47F46D33-1B4F-451F-B071-B5B89BECC8D0}|AspTest.csproj|d:\\.net\\asptest\\models\\testsessions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47F46D33-1B4F-451F-B071-B5B89BECC8D0}|AspTest.csproj|solutionrelative:models\\testsessions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47F46D33-1B4F-451F-B071-B5B89BECC8D0}|AspTest.csproj|d:\\.net\\asptest\\controllers\\testsessionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47F46D33-1B4F-451F-B071-B5B89BECC8D0}|AspTest.csproj|solutionrelative:controllers\\testsessionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47F46D33-1B4F-451F-B071-B5B89BECC8D0}|AspTest.csproj|d:\\.net\\asptest\\migrations\\20250826121004_seedfakedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47F46D33-1B4F-451F-B071-B5B89BECC8D0}|AspTest.csproj|solutionrelative:migrations\\20250826121004_seedfakedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47F46D33-1B4F-451F-B071-B5B89BECC8D0}|AspTest.csproj|d:\\.net\\asptest\\models\\testsessiontests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47F46D33-1B4F-451F-B071-B5B89BECC8D0}|AspTest.csproj|solutionrelative:models\\testsessiontests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47F46D33-1B4F-451F-B071-B5B89BECC8D0}|AspTest.csproj|d:\\.net\\asptest\\data\\asptestdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47F46D33-1B4F-451F-B071-B5B89BECC8D0}|AspTest.csproj|solutionrelative:data\\asptestdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47F46D33-1B4F-451F-B071-B5B89BECC8D0}|AspTest.csproj|d:\\.net\\asptest\\models\\options.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47F46D33-1B4F-451F-B071-B5B89BECC8D0}|AspTest.csproj|solutionrelative:models\\options.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47F46D33-1B4F-451F-B071-B5B89BECC8D0}|AspTest.csproj|d:\\.net\\asptest\\controllers\\testscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47F46D33-1B4F-451F-B071-B5B89BECC8D0}|AspTest.csproj|solutionrelative:controllers\\testscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47F46D33-1B4F-451F-B071-B5B89BECC8D0}|AspTest.csproj|d:\\.net\\asptest\\models\\tests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47F46D33-1B4F-451F-B071-B5B89BECC8D0}|AspTest.csproj|solutionrelative:models\\tests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47F46D33-1B4F-451F-B071-B5B89BECC8D0}|AspTest.csproj|d:\\.net\\asptest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47F46D33-1B4F-451F-B071-B5B89BECC8D0}|AspTest.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47F46D33-1B4F-451F-B071-B5B89BECC8D0}|AspTest.csproj|d:\\.net\\asptest\\wwwroot\\seed\\tests.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{47F46D33-1B4F-451F-B071-B5B89BECC8D0}|AspTest.csproj|solutionrelative:wwwroot\\seed\\tests.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AspTest/True/SqlTable/dbo.Options.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AspTest/True/SqlTable/dbo.Tests.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47F46D33-1B4F-451F-B071-B5B89BECC8D0}|AspTest.csproj|d:\\.net\\asptest\\data\\asptestdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47F46D33-1B4F-451F-B071-B5B89BECC8D0}|AspTest.csproj|solutionrelative:data\\asptestdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47F46D33-1B4F-451F-B071-B5B89BECC8D0}|AspTest.csproj|d:\\.net\\asptest\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{47F46D33-1B4F-451F-B071-B5B89BECC8D0}|AspTest.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47F46D33-1B4F-451F-B071-B5B89BECC8D0}|AspTest.csproj|d:\\.net\\asptest\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47F46D33-1B4F-451F-B071-B5B89BECC8D0}|AspTest.csproj|solutionrelative:models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47F46D33-1B4F-451F-B071-B5B89BECC8D0}|AspTest.csproj|d:\\.net\\asptest\\models\\testsessionanswers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47F46D33-1B4F-451F-B071-B5B89BECC8D0}|AspTest.csproj|solutionrelative:models\\testsessionanswers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47F46D33-1B4F-451F-B071-B5B89BECC8D0}|AspTest.csproj|d:\\.net\\asptest\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{47F46D33-1B4F-451F-B071-B5B89BECC8D0}|AspTest.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AspTest/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\.net\\AspTest\\Migrations\\20250826091854_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250826091854_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\.net\\AspTest\\Migrations\\20250826090206_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250826090206_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\.net\\AspTest\\Migrations\\20250826090008_ForeignKeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250826090008_ForeignKeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\.net\\AspTest\\Migrations\\20250826085716_Foreign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250826085716_Foreign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47F46D33-1B4F-451F-B071-B5B89BECC8D0}|AspTest.csproj|d:\\.net\\asptest\\controllers\\testsessionanswerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47F46D33-1B4F-451F-B071-B5B89BECC8D0}|AspTest.csproj|solutionrelative:controllers\\testsessionanswerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47F46D33-1B4F-451F-B071-B5B89BECC8D0}|AspTest.csproj|d:\\.net\\asptest\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47F46D33-1B4F-451F-B071-B5B89BECC8D0}|AspTest.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47F46D33-1B4F-451F-B071-B5B89BECC8D0}|AspTest.csproj|d:\\.net\\asptest\\controllers\\optionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47F46D33-1B4F-451F-B071-B5B89BECC8D0}|AspTest.csproj|solutionrelative:controllers\\optionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1358152725:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Options.cs",
+              "DocumentMoniker": "D:\\.net\\AspTest\\Models\\Options.cs",
+              "RelativeDocumentMoniker": "Models\\Options.cs",
+              "ToolTip": "D:\\.net\\AspTest\\Models\\Options.cs",
+              "RelativeToolTip": "Models\\Options.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T08:28:36.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TestSessionsController.cs",
+              "DocumentMoniker": "D:\\.net\\AspTest\\Controllers\\TestSessionsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TestSessionsController.cs",
+              "ToolTip": "D:\\.net\\AspTest\\Controllers\\TestSessionsController.cs",
+              "RelativeToolTip": "Controllers\\TestSessionsController.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAIwFAAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T08:29:39.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AspTestDbContext.cs",
+              "DocumentMoniker": "D:\\.net\\AspTest\\Data\\AspTestDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AspTestDbContext.cs",
+              "ToolTip": "D:\\.net\\AspTest\\Data\\AspTestDbContext.cs",
+              "RelativeToolTip": "Data\\AspTestDbContext.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAowD4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T08:55:53.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TestSessions.cs",
+              "DocumentMoniker": "D:\\.net\\AspTest\\Models\\TestSessions.cs",
+              "RelativeDocumentMoniker": "Models\\TestSessions.cs",
+              "ToolTip": "D:\\.net\\AspTest\\Models\\TestSessions.cs",
+              "RelativeToolTip": "Models\\TestSessions.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAwwA0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T08:45:10.26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TestSessionTests.cs",
+              "DocumentMoniker": "D:\\.net\\AspTest\\Models\\TestSessionTests.cs",
+              "RelativeDocumentMoniker": "Models\\TestSessionTests.cs",
+              "ToolTip": "D:\\.net\\AspTest\\Models\\TestSessionTests.cs",
+              "RelativeToolTip": "Models\\TestSessionTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T08:41:15.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20250826121004_SeedFakeData.cs",
+              "DocumentMoniker": "D:\\.net\\AspTest\\Migrations\\20250826121004_SeedFakeData.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250826121004_SeedFakeData.cs",
+              "ToolTip": "D:\\.net\\AspTest\\Migrations\\20250826121004_SeedFakeData.cs",
+              "RelativeToolTip": "Migrations\\20250826121004_SeedFakeData.cs",
+              "ViewState": "AgIAAEwBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T12:10:04.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TestsController.cs",
+              "DocumentMoniker": "D:\\.net\\AspTest\\Controllers\\TestsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TestsController.cs",
+              "ToolTip": "D:\\.net\\AspTest\\Controllers\\TestsController.cs",
+              "RelativeToolTip": "Controllers\\TestsController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T08:28:16.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Tests.cs",
+              "DocumentMoniker": "D:\\.net\\AspTest\\Models\\Tests.cs",
+              "RelativeDocumentMoniker": "Models\\Tests.cs",
+              "ToolTip": "D:\\.net\\AspTest\\Models\\Tests.cs",
+              "RelativeToolTip": "Models\\Tests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T08:44:30.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\.net\\AspTest\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\.net\\AspTest\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T09:23:59.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "tests.json",
+              "DocumentMoniker": "D:\\.net\\AspTest\\wwwroot\\seed\\tests.json",
+              "RelativeDocumentMoniker": "wwwroot\\seed\\tests.json",
+              "ToolTip": "D:\\.net\\AspTest\\wwwroot\\seed\\tests.json",
+              "RelativeToolTip": "wwwroot\\seed\\tests.json",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACEAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-26T12:03:20.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "dbo.Options [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AspTest/True/SqlTable/dbo.Options.sql",
+              "ToolTip": "dbo.Options [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-08-26T12:10:48.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "dbo.Tests [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AspTest/True/SqlTable/dbo.Tests.sql",
+              "ToolTip": "dbo.Tests [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-08-26T12:10:39.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AspTestDbContextFactory.cs",
+              "DocumentMoniker": "D:\\.net\\AspTest\\Data\\AspTestDbContextFactory.cs",
+              "RelativeDocumentMoniker": "Data\\AspTestDbContextFactory.cs",
+              "ToolTip": "D:\\.net\\AspTest\\Data\\AspTestDbContextFactory.cs",
+              "RelativeToolTip": "Data\\AspTestDbContextFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T08:55:49.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "README.md",
+              "DocumentMoniker": "D:\\.net\\AspTest\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "D:\\.net\\AspTest\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-08-26T09:38:01.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Users.cs",
+              "DocumentMoniker": "D:\\.net\\AspTest\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "Models\\Users.cs",
+              "ToolTip": "D:\\.net\\AspTest\\Models\\Users.cs",
+              "RelativeToolTip": "Models\\Users.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T09:18:13.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\.net\\AspTest\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\.net\\AspTest\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-26T09:26:36.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "dbo.Users [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AspTest/True/SqlTable/dbo.Users.sql",
+              "ToolTip": "dbo.Users [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-08-26T09:20:30.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TestSessionAnswers.cs",
+              "DocumentMoniker": "D:\\.net\\AspTest\\Models\\TestSessionAnswers.cs",
+              "RelativeDocumentMoniker": "Models\\TestSessionAnswers.cs",
+              "ToolTip": "D:\\.net\\AspTest\\Models\\TestSessionAnswers.cs",
+              "RelativeToolTip": "Models\\TestSessionAnswers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T08:42:55.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "20250826091854_Init.cs",
+              "DocumentMoniker": "D:\\.net\\AspTest\\Migrations\\20250826091854_Init.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250826091854_Init.cs",
+              "ToolTip": "D:\\.net\\AspTest\\Migrations\\20250826091854_Init.cs",
+              "RelativeToolTip": "Migrations\\20250826091854_Init.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T09:18:54.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "20250826090206_Init.cs",
+              "DocumentMoniker": "D:\\.net\\AspTest\\Migrations\\20250826090206_Init.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250826090206_Init.cs",
+              "ToolTip": "D:\\.net\\AspTest\\Migrations\\20250826090206_Init.cs",
+              "RelativeToolTip": "Migrations\\20250826090206_Init.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T09:02:06.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "20250826090008_ForeignKeys.cs",
+              "DocumentMoniker": "D:\\.net\\AspTest\\Migrations\\20250826090008_ForeignKeys.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250826090008_ForeignKeys.cs",
+              "ToolTip": "D:\\.net\\AspTest\\Migrations\\20250826090008_ForeignKeys.cs",
+              "RelativeToolTip": "Migrations\\20250826090008_ForeignKeys.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T09:00:09.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "20250826085716_Foreign.cs",
+              "DocumentMoniker": "D:\\.net\\AspTest\\Migrations\\20250826085716_Foreign.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250826085716_Foreign.cs",
+              "ToolTip": "D:\\.net\\AspTest\\Migrations\\20250826085716_Foreign.cs",
+              "RelativeToolTip": "Migrations\\20250826085716_Foreign.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T08:57:16.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "TestSessionAnswersController.cs",
+              "DocumentMoniker": "D:\\.net\\AspTest\\Controllers\\TestSessionAnswersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TestSessionAnswersController.cs",
+              "ToolTip": "D:\\.net\\AspTest\\Controllers\\TestSessionAnswersController.cs",
+              "RelativeToolTip": "Controllers\\TestSessionAnswersController.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAmwA8AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T08:30:13.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "OptionsController.cs",
+              "DocumentMoniker": "D:\\.net\\AspTest\\Controllers\\OptionsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OptionsController.cs",
+              "ToolTip": "D:\\.net\\AspTest\\Controllers\\OptionsController.cs",
+              "RelativeToolTip": "Controllers\\OptionsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T08:29:04.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\.net\\AspTest\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
+              "ToolTip": "D:\\.net\\AspTest\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T08:26:48.936Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

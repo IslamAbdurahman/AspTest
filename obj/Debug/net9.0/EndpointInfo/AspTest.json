@@ -993,9 +993,6 @@
             "type": "integer",
             "format": "int64"
           },
-          "test": {
-            "$ref": "#/components/schemas/Tests"
-          },
           "optionText": {
             "type": "string",
             "nullable": true
