@@ -452,6 +452,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "AspTest.Controllers.TestUploadController",
+    "Method": "UploadTests",
+    "RelativePath": "api/TestUpload/UploadTests",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "File",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "AspTest.Controllers.UsersController",
     "Method": "GetUsers",
     "RelativePath": "api/Users",

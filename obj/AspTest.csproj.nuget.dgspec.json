@@ -59,6 +59,14 @@
               "target": "Package",
               "version": "[35.6.3, )"
             },
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.105.0, )"
+            },
+            "EPPlus": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
             "JWT": {
               "target": "Package",
               "version": "[11.0.0, )"
