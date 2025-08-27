@@ -1,4 +1,5 @@
 ﻿using AspTest.Data;
+using AspTest.DTOs;
 using AspTest.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -13,7 +14,7 @@ namespace AspTest.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+    //[Authorize]
     public class TestSessionAnswersController : ControllerBase
     {
         private readonly AspTestDbContext _context;
@@ -23,14 +24,14 @@ namespace AspTest.Controllers
             _context = context;
         }
 
-        // GET: api/TestSessionAnswers
+
         [HttpGet]
         public async Task<ActionResult<IEnumerable<TestSessionAnswers>>> GetTestSessionAnswers()
         {
             return await _context.TestSessionAnswers.ToListAsync();
         }
 
-        // GET: api/TestSessionAnswers/5
+
         [HttpGet("{id}")]
         public async Task<ActionResult<TestSessionAnswers>> GetTestSessionAnswers(int id)
         {
@@ -44,8 +45,7 @@ namespace AspTest.Controllers
             return testSessionAnswers;
         }
 
-        // PUT: api/TestSessionAnswers/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+
         [HttpPut("{id}")]
         public async Task<IActionResult> PutTestSessionAnswers(int id, TestSessionAnswers testSessionAnswers)
         {
@@ -75,18 +75,27 @@ namespace AspTest.Controllers
             return NoContent();
         }
 
-        // POST: api/TestSessionAnswers
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+
         [HttpPost]
-        public async Task<ActionResult<TestSessionAnswers>> PostTestSessionAnswers(TestSessionAnswers testSessionAnswers)
+        public async Task<ActionResult<CreateTestSessionAnswerDto>> PostTestSessionAnswers(CreateTestSessionAnswerDto testSessionAnswers)
         {
-            _context.TestSessionAnswers.Add(testSessionAnswers);
+            var entity = new TestSessionAnswers
+            {
+                TestSessionTestId = testSessionAnswers.TestSessionTestId,
+                SelectedOptionId = testSessionAnswers.SelectedOptionId,
+                AnsweredAt = DateTime.Now,
+            };
+
+            _context.TestSessionAnswers.Add(entity);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetTestSessionAnswers", new { id = testSessionAnswers.Id }, testSessionAnswers);
+            testSessionAnswers.Id = entity.Id;
+
+            return CreatedAtAction(nameof(GetTestSessionAnswers), new { id = entity.Id }, testSessionAnswers);
         }
 
-        // DELETE: api/TestSessionAnswers/5
+
+
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteTestSessionAnswers(int id)
         {

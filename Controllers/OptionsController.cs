@@ -1,4 +1,5 @@
 ﻿using AspTest.Data;
+using AspTest.DTOs;
 using AspTest.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -23,14 +24,14 @@ namespace AspTest.Controllers
             _context = context;
         }
 
-        // GET: api/Options
+
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Options>>> GetOptions()
         {
             return await _context.Options.ToListAsync();
         }
 
-        // GET: api/Options/5
+
         [HttpGet("{id}")]
         public async Task<ActionResult<Options>> GetOptions(int id)
         {
@@ -44,8 +45,7 @@ namespace AspTest.Controllers
             return options;
         }
 
-        // PUT: api/Options/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+
         [HttpPut("{id}")]
         public async Task<IActionResult> PutOptions(int id, Options options)
         {
@@ -75,18 +75,27 @@ namespace AspTest.Controllers
             return NoContent();
         }
 
-        // POST: api/Options
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+
         [HttpPost]
-        public async Task<ActionResult<Options>> PostOptions(Options options)
+        public async Task<ActionResult<CreateOptionDto>> PostOptions(CreateOptionDto options)
         {
-            _context.Options.Add(options);
+            var entity = new Options
+            {
+                TestId = options.TestId,
+                OptionText = options.OptionText,
+                IsCorrect = options.IsCorrect,
+                CreatedAt = DateTime.Now
+            };
+
+            _context.Options.Add(entity);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetOptions", new { id = options.Id }, options);
+            options.Id = entity.Id;
+
+            return CreatedAtAction(nameof(GetOptions), new { id = entity.Id }, options);
         }
 
-        // DELETE: api/Options/5
+
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteOptions(int id)
         {

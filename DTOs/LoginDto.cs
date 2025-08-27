@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace AspTest.Requests
+namespace AspTest.DTOs
 {
-    public class LoginRequest
+    public class LoginDto
     {
         [Required]
         public string? Username { get; set; }

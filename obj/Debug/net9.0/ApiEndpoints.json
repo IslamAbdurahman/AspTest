@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "AspTest.Requests.LoginRequest",
+        "Type": "AspTest.DTOs.LoginDto",
         "IsRequired": true
       }
     ],
@@ -45,13 +45,13 @@
     "Parameters": [
       {
         "Name": "options",
-        "Type": "AspTest.Models.Options",
+        "Type": "AspTest.DTOs.CreateOptionDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "AspTest.Models.Options",
+        "Type": "AspTest.DTOs.CreateOptionDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -154,13 +154,13 @@
     "Parameters": [
       {
         "Name": "tests",
-        "Type": "AspTest.Models.Tests",
+        "Type": "AspTest.DTOs.CreateTestDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "AspTest.Models.Tests",
+        "Type": "AspTest.DTOs.CreateTestDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -263,13 +263,13 @@
     "Parameters": [
       {
         "Name": "testSessionAnswers",
-        "Type": "TestSessionAnswers",
+        "Type": "AspTest.DTOs.CreateTestSessionAnswerDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "TestSessionAnswers",
+        "Type": "AspTest.DTOs.CreateTestSessionAnswerDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -371,14 +371,14 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "testSessions",
-        "Type": "TestSessions",
+        "Name": "dto",
+        "Type": "AspTest.DTOs.CreateTestSessionDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "TestSessions",
+        "Type": "AspTest.DTOs.CreateTestSessionDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -398,13 +398,13 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.Int32",
+        "Type": "System.Int64",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "TestSessions",
+        "Type": "AspTest.Dtos.TestSessionDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -481,13 +481,13 @@
     "Parameters": [
       {
         "Name": "users",
-        "Type": "AspTest.Models.Users",
+        "Type": "AspTest.DTOs.CreateUserDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "AspTest.Models.Users",
+        "Type": "AspTest.DTOs.CreateUserDto",
         "MediaTypes": [
           "text/plain",
           "application/json",

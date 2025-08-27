@@ -1,5 +1,7 @@
 ﻿using AspTest.Data;
+using AspTest.DTOs;
 using AspTest.Models;
+using Humanizer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -23,7 +25,7 @@ namespace AspTest.Controllers
             _context = context;
         }
 
-        // GET: api/Tests
+
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Tests>>> GetTests()
         {
@@ -32,7 +34,7 @@ namespace AspTest.Controllers
                 .ToListAsync();
         }
 
-        // GET: api/Tests/5
+
         [HttpGet("{id}")]
         public async Task<ActionResult<Tests>> GetTests(int id)
         {
@@ -46,8 +48,7 @@ namespace AspTest.Controllers
             return tests;
         }
 
-        // PUT: api/Tests/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+
         [HttpPut("{id}")]
         public async Task<IActionResult> PutTests(int id, Tests tests)
         {
@@ -77,18 +78,28 @@ namespace AspTest.Controllers
             return NoContent();
         }
 
-        // POST: api/Tests
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+
         [HttpPost]
-        public async Task<ActionResult<Tests>> PostTests(Tests tests)
+        public async Task<ActionResult<CreateTestDto>> PostTests(CreateTestDto tests)
         {
-            _context.Tests.Add(tests);
+            var entity = new Tests
+            {
+                QuestionText = tests.QuestionText,
+                IsActive = tests.IsActive,
+                CreatedAt = DateTime.Now,
+            };
+
+            _context.Tests.Add(entity);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetTests", new { id = tests.Id }, tests);
+            // Saqlangandan keyin entity.Id mavjud bo‘ladi
+            tests.Id = entity.Id;
+
+            return CreatedAtAction(nameof(GetTests), new { id = entity.Id }, tests);
         }
 
-        // DELETE: api/Tests/5
+
+
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteTests(int id)
         {

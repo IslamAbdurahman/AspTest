@@ -279,3 +279,4 @@ D:\.net\AspTest\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 D:\.net\AspTest\bin\Debug\net9.0\Bogus.dll
 D:\.net\AspTest\obj\Debug\net9.0\AspTest.sourcelink.json
 D:\.net\AspTest\obj\Debug\net9.0\compressed\d83jqzxj5t-qto218tsik.gz
+D:\.net\AspTest\bin\Debug\net9.0\BCrypt.Net-Next.dll

@@ -1,6 +1,6 @@
 ﻿using AspTest.Data;
-using AspTest.Data.Services;
-using AspTest.Requests;
+using AspTest.DTOs;
+using AspTest.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Cryptography;
@@ -33,16 +33,18 @@ public class AuthController : ControllerBase
     }
 
     [HttpPost("login")]
-    public IActionResult Login([FromBody] LoginRequest request)
+    public IActionResult Login([FromBody] LoginDto request)
     {
         var user = _context.Users.FirstOrDefault(u => u.Username == request.Username);
         if (user == null)
             return Unauthorized("Login yoki parol noto‘g‘ri");
 
-        if (user.PasswordHash != Md5Hash(request.Password))
+        if (user == null || !BCrypt.Net.BCrypt.Verify(request.Password, user.PasswordHash))
+        {
             return Unauthorized("Login yoki parol noto‘g‘ri");
+        }
 
-        // 3️⃣ Token generatsiya qilish
+
         var token = _jwtService.GenerateToken(user.Username, user.Id);
 
         return Ok(new { Token = token });

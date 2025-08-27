@@ -1,8 +1,10 @@
 ﻿using AspTest.Data;
+using AspTest.DTOs;
 using AspTest.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.Scripting;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -23,14 +25,14 @@ namespace AspTest.Controllers
             _context = context;
         }
 
-        // GET: api/Users
+
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Users>>> GetUsers()
         {
             return await _context.Users.ToListAsync();
         }
 
-        // GET: api/Users/5
+
         [HttpGet("{id}")]
         public async Task<ActionResult<Users>> GetUsers(int id)
         {
@@ -44,8 +46,7 @@ namespace AspTest.Controllers
             return users;
         }
 
-        // PUT: api/Users/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+
         [HttpPut("{id}")]
         public async Task<IActionResult> PutUsers(int id, Users users)
         {
@@ -75,18 +76,34 @@ namespace AspTest.Controllers
             return NoContent();
         }
 
-        // POST: api/Users
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Users>> PostUsers(Users users)
+        public async Task<ActionResult<CreateUserDto>> PostUsers(CreateUserDto users)
         {
-            _context.Users.Add(users);
+
+            var passwordHash = BCrypt.Net.BCrypt.HashPassword(users.Password);
+
+            var entity = new Users
+            {
+                Username = users.Username,
+                PasswordHash = passwordHash,   
+                CreatedAt = DateTime.UtcNow
+            };
+
+            _context.Users.Add(entity);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetUsers", new { id = users.Id }, users);
+
+            users.Id = entity.Id;
+
+
+            users.Password = null;
+
+            return CreatedAtAction(nameof(GetUsers), new { id = entity.Id }, users);
         }
 
-        // DELETE: api/Users/5
+
+
+
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUsers(int id)
         {

@@ -5,10 +5,8 @@ public class TestSessions
     public long Id { get; set; }  // 🔥 change to long
     public long UserId { get; set; }
     public Users User { get; set; }
-    public long TestId { get; set; }
-    public Tests Test { get; set; }
 
-    public DateTime StartedAt { get; set; }
+    public DateTime StartedAt { get; set; } = DateTime.Now;
     public DateTime? CompletedAt { get; set; }
     public int CorrectCount { get; set; } = 0;
     public int Minutes { get; set; } = 0;

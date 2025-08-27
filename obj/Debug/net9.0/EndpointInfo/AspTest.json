@@ -14,17 +14,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/LoginRequest"
+                "$ref": "#/components/schemas/LoginDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/LoginRequest"
+                "$ref": "#/components/schemas/LoginDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/LoginRequest"
+                "$ref": "#/components/schemas/LoginDto"
               }
             }
           }
@@ -81,17 +81,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Options"
+                "$ref": "#/components/schemas/CreateOptionDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Options"
+                "$ref": "#/components/schemas/CreateOptionDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Options"
+                "$ref": "#/components/schemas/CreateOptionDto"
               }
             }
           }
@@ -102,17 +102,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Options"
+                  "$ref": "#/components/schemas/CreateOptionDto"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Options"
+                  "$ref": "#/components/schemas/CreateOptionDto"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Options"
+                  "$ref": "#/components/schemas/CreateOptionDto"
                 }
               }
             }
@@ -266,17 +266,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Tests"
+                "$ref": "#/components/schemas/CreateTestDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Tests"
+                "$ref": "#/components/schemas/CreateTestDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Tests"
+                "$ref": "#/components/schemas/CreateTestDto"
               }
             }
           }
@@ -287,17 +287,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Tests"
+                  "$ref": "#/components/schemas/CreateTestDto"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Tests"
+                  "$ref": "#/components/schemas/CreateTestDto"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Tests"
+                  "$ref": "#/components/schemas/CreateTestDto"
                 }
               }
             }
@@ -451,17 +451,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/TestSessionAnswers"
+                "$ref": "#/components/schemas/CreateTestSessionAnswerDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/TestSessionAnswers"
+                "$ref": "#/components/schemas/CreateTestSessionAnswerDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/TestSessionAnswers"
+                "$ref": "#/components/schemas/CreateTestSessionAnswerDto"
               }
             }
           }
@@ -472,17 +472,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/TestSessionAnswers"
+                  "$ref": "#/components/schemas/CreateTestSessionAnswerDto"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/TestSessionAnswers"
+                  "$ref": "#/components/schemas/CreateTestSessionAnswerDto"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/TestSessionAnswers"
+                  "$ref": "#/components/schemas/CreateTestSessionAnswerDto"
                 }
               }
             }
@@ -636,17 +636,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/TestSessions"
+                "$ref": "#/components/schemas/CreateTestSessionDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/TestSessions"
+                "$ref": "#/components/schemas/CreateTestSessionDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/TestSessions"
+                "$ref": "#/components/schemas/CreateTestSessionDto"
               }
             }
           }
@@ -657,17 +657,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/TestSessions"
+                  "$ref": "#/components/schemas/CreateTestSessionDto"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/TestSessions"
+                  "$ref": "#/components/schemas/CreateTestSessionDto"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/TestSessions"
+                  "$ref": "#/components/schemas/CreateTestSessionDto"
                 }
               }
             }
@@ -687,7 +687,7 @@
             "required": true,
             "schema": {
               "type": "integer",
-              "format": "int32"
+              "format": "int64"
             }
           }
         ],
@@ -697,17 +697,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/TestSessions"
+                  "$ref": "#/components/schemas/TestSessionDto"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/TestSessions"
+                  "$ref": "#/components/schemas/TestSessionDto"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/TestSessions"
+                  "$ref": "#/components/schemas/TestSessionDto"
                 }
               }
             }
@@ -821,17 +821,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Users"
+                "$ref": "#/components/schemas/CreateUserDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Users"
+                "$ref": "#/components/schemas/CreateUserDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Users"
+                "$ref": "#/components/schemas/CreateUserDto"
               }
             }
           }
@@ -842,17 +842,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Users"
+                  "$ref": "#/components/schemas/CreateUserDto"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Users"
+                  "$ref": "#/components/schemas/CreateUserDto"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Users"
+                  "$ref": "#/components/schemas/CreateUserDto"
                 }
               }
             }
@@ -964,7 +964,111 @@
   },
   "components": {
     "schemas": {
-      "LoginRequest": {
+      "CreateOptionDto": {
+        "required": [
+          "isCorrect",
+          "optionText",
+          "testId"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "testId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "optionText": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "isCorrect": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateTestDto": {
+        "required": [
+          "isActive",
+          "questionText"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "questionText": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "isActive": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateTestSessionAnswerDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "testSessionTestId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "selectedOptionId": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateTestSessionDto": {
+        "required": [
+          "userId"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateUserDto": {
+        "required": [
+          "password",
+          "username"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "username": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "password": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoginDto": {
         "required": [
           "password",
           "username"
@@ -978,6 +1082,23 @@
           "password": {
             "minLength": 1,
             "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "OptionDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "optionText": {
+            "type": "string",
+            "nullable": true
+          },
+          "isCorrect": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false
@@ -1003,6 +1124,30 @@
           "createdAt": {
             "type": "string",
             "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TestDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "questionText": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean"
+          },
+          "options": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/OptionDto"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1035,6 +1180,52 @@
         },
         "additionalProperties": false
       },
+      "TestSessionDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "startedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "completedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "correctCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "minutes": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "tests": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TestDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "TestSessionTests": {
         "type": "object",
         "properties": {
@@ -1045,9 +1236,6 @@
           "testSessionId": {
             "type": "integer",
             "format": "int64"
-          },
-          "testSession": {
-            "$ref": "#/components/schemas/TestSessions"
           },
           "testId": {
             "type": "integer",
@@ -1079,13 +1267,6 @@
           },
           "user": {
             "$ref": "#/components/schemas/Users"
-          },
-          "testId": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "test": {
-            "$ref": "#/components/schemas/Tests"
           },
           "startedAt": {
             "type": "string",

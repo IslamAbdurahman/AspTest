@@ -1,4 +1,6 @@
 ﻿using AspTest.Data;
+using AspTest.Dtos;
+using AspTest.DTOs;
 using AspTest.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -23,29 +25,56 @@ namespace AspTest.Controllers
             _context = context;
         }
 
-        // GET: api/TestSessions
+
         [HttpGet]
         public async Task<ActionResult<IEnumerable<TestSessions>>> GetTestSessions()
         {
             return await _context.TestSessions.ToListAsync();
         }
 
-        // GET: api/TestSessions/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<TestSessions>> GetTestSessions(int id)
-        {
-            var testSessions = await _context.TestSessions.FindAsync(id);
 
-            if (testSessions == null)
+        [HttpGet("{id}")]
+        public async Task<ActionResult<TestSessionDto>> GetTestSessions(long id)
+        {
+            var testSession = await _context.TestSessions
+                .Include(ts => ts.TestSessionTests)
+                    .ThenInclude(tst => tst.Test)
+                        .ThenInclude(t => t.Options)
+                .FirstOrDefaultAsync(ts => ts.Id == id);
+
+            if (testSession == null)
             {
                 return NotFound();
             }
 
-            return testSessions;
+
+            var dto = new TestSessionDto
+            {
+                Id = testSession.Id,
+                UserId = testSession.UserId,
+                StartedAt = testSession.StartedAt,
+                CompletedAt = testSession.CompletedAt,
+                CorrectCount = testSession.CorrectCount,
+                Minutes = testSession.Minutes,
+                Status = testSession.Status,
+                Tests = testSession.TestSessionTests.Select(tst => new TestDto
+                {
+                    Id = tst.Test.Id,
+                    QuestionText = tst.Test.QuestionText,
+                    IsActive = tst.Test.IsActive,
+                    Options = tst.Test.Options.Select(o => new OptionDto
+                    {
+                        Id = o.Id,
+                        OptionText = o.OptionText,
+                        IsCorrect = o.IsCorrect
+                    }).ToList()
+                }).ToList()
+            };
+
+            return dto;
         }
 
-        // PUT: api/TestSessions/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+
         [HttpPut("{id}")]
         public async Task<IActionResult> PutTestSessions(int id, TestSessions testSessions)
         {
@@ -75,34 +104,54 @@ namespace AspTest.Controllers
             return NoContent();
         }
 
-        // POST: api/TestSessions
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPost]
-        public async Task<ActionResult<TestSessions>> PostTestSessions(TestSessions testSessions)
-        {
-            _context.TestSessions.Add(testSessions);
 
-            // Get 10 random or first 10 tests from the Tests table
+        [HttpPost]
+        public async Task<ActionResult<CreateTestSessionDto>> PostTestSessions(CreateTestSessionDto dto)
+        {
+
+            var entity = new TestSessions
+            {
+                UserId = dto.UserId,
+                StartedAt = DateTime.Now,
+                Minutes = 30
+            };
+
+            _context.TestSessions.Add(entity);
+            await _context.SaveChangesAsync();
+
+
             var tests = await _context.Tests
-                .Where(t => t.IsActive)      // only active tests
-                .Take(10)                    // take first 10 (or use OrderBy/random if you want)
+                .Where(t => t.IsActive)
+                .Take(10)
                 .ToListAsync();
 
             foreach (var test in tests)
             {
-                testSessions.TestSessionTests.Add(new TestSessionTests
+                _context.TestSessionTests.Add(new TestSessionTests
                 {
                     TestId = test.Id,
-                    TestSessionId = testSessions.Id
+                    TestSessionId = entity.Id
                 });
             }
 
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetTestSessions", new { id = testSessions.Id }, testSessions);
+
+            var resultDto = new TestSessionDto
+            {
+                Id = entity.Id,
+                UserId = entity.UserId,
+                StartedAt = entity.StartedAt,
+                CompletedAt = entity.CompletedAt,
+                CorrectCount = entity.CorrectCount,
+                Minutes = entity.Minutes,
+                Status = entity.Status
+            };
+
+            return CreatedAtAction("GetTestSessions", new { id = entity.Id }, resultDto);
         }
 
-        // DELETE: api/TestSessions/5
+
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteTestSessions(int id)
         {

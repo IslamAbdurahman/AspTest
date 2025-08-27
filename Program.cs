@@ -1,5 +1,5 @@
 ﻿using AspTest.Data;
-using AspTest.Data.Services;
+using AspTest.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
